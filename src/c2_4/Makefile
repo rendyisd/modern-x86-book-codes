@@ -9,9 +9,9 @@ endif
 OBJ_DIR := obj
 ROOT_BIN_DIR = ../../bin
 
-SRC_C := c2_1_misc
-SRC_S := c2_1_fasm
-TARGET := $(ROOT_BIN_DIR)/c2_1
+SRC_C := c2_4_misc
+SRC_S := c2_4_fasm
+TARGET := $(ROOT_BIN_DIR)/c2_4
 
 OBJ_C := $(patsubst %, $(OBJ_DIR)/%.o, $(SRC_C))
 OBJ_S := $(patsubst %, $(OBJ_DIR)/%.o, $(SRC_S))

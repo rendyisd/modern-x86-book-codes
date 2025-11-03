@@ -1,10 +1,13 @@
+// ========================================================
+// 32-bit Interger Addition and Substraction
+// ========================================================
 #include <stdio.h>
 
 #include "c2_1.h"
 
 void display_results(int a, int b, int c, int d, int res1, int res2)
 {
-    printf("----- Results for c2_1 -----\n");
+    printf("----- Results for c2_1 -----\n\n");
     printf("a = %d\n", a);
     printf("b = %d\n", b);
     printf("c = %d\n", c);

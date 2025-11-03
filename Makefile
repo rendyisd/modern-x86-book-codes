@@ -1,13 +1,24 @@
-SUBDIR := src/c2_1
-ROOT_BIN := bin/
+SRC_DIR := src
+BIN := c2_1 c2_2 c2_3 c2_4 c2_5
 
-all: $(SUBDIR) | $(ROOT_BIN)
-	make -C $<
+SUBDIR := $(addprefix $(SRC_DIR)/, $(BIN))
+ROOT_BIN := bin
+
+all: $(SUBDIR)
+
+$(SUBDIR): $(ROOT_BIN)
+	@echo "[ Building $@... ]"
+	@make -C $@
 
 $(ROOT_BIN):
 	mkdir -p $(ROOT_BIN)
 
-clean-all: $(SUBDIR)
-	make -C $< clean
+clean:
+	@for dir in $(SUBDIR); do \
+		echo "[ Cleaning $$dir... ]"; \
+		make -C $$dir clean; \
+	done
+	@echo "[ Cleaning bin ]";
+	rm -rf $(ROOT_BIN)
 
-.PHONY: all clean-all
+.PHONY: all clean $(SUBDIR)
