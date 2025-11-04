@@ -1,5 +1,6 @@
 SRC_DIR := src
-BIN := c2_1 c2_2 c2_3 c2_4 c2_5
+BIN := c2_1 c2_2 c2_3 c2_4 c2_5 \
+	   c3_1 c3_2
 
 SUBDIR := $(addprefix $(SRC_DIR)/, $(BIN))
 ROOT_BIN := bin
