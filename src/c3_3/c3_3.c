@@ -1,5 +1,5 @@
 // ========================================================
-// Mixed-Type Integer Arithmetic
+// Memory Addressing Modes
 // ========================================================
 #include <stdio.h>
 #include <inttypes.h>
