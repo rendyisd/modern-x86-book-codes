@@ -63,7 +63,7 @@ static void calc_result_u64(void)
 
 int main(void)
 {
-    printf("----- Results for c3_1 -----\n");
+    printf("----- Results for c3_2 -----\n");
 
     calc_result_i64();
     calc_result_u64();
